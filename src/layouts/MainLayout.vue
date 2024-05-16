@@ -1,7 +1,6 @@
 <template>
   <header class="flex flex-row items-center h-12 justify-around">
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="40" height="40" />
-
+    <LogoSvg class="w-[40px] h-[40px]" />
     <div class="wrapper">
       <nav>
         <RouterLink class="pr-5 pl-5" to="/">Home</RouterLink>
@@ -13,7 +12,9 @@
     <RouterView />
   </div>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import LogoSvg from '@/assets/icons/logo.svg'
+</script>
 <style scoped>
 .router-link-exact-active {
   color: cadetblue;
